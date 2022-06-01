@@ -1,0 +1,11 @@
+.DS_Store
+
+# IDEs
+.project
+.classpath
+.settings
+.checkstyle
+.pydevproject
+.idea/
+
+.tool-versions
