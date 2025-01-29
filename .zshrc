@@ -48,7 +48,5 @@ function setjdk() {
 
 setjdk 18
 
-export PATH="$HOME/.poetry/bin:$PATH"
-
 # Created by `pipx` on 2022-05-02 23:12:07
-export PATH="$PATH:/Users/$USER/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
