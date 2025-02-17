@@ -29,7 +29,7 @@ defaults write com.apple.Terminal CopyAttributesProfile com.apple.Terminal.no-at
 autoload -U select-word-style
 select-word-style bash
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # Set JDK version
 function setjdk() {
@@ -46,7 +46,7 @@ function setjdk() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
  }
 
-setjdk 18
+setjdk 23
 
 # Created by `pipx` on 2022-05-02 23:12:07
 export PATH="$PATH:$HOME/.local/bin"
